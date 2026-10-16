@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Tektur:wght@400..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --smart-blue: #0466c8;
+    --steel-azure: #0353a4;
+    --regal-navy: #023e7d;
+    --prussian-blue-var1: #002855;
+    --prussian-blue-var2: #001845;
+    --prussian-blue-var3: #001233;
+    --twilight-indigo: #33415c;
+    --blue-slate: #5c677d;
+    --slate-grey: #7d8597;
+    --cool-steel: #979dac;
+}
+
+.tektur {
+  font-family: "Tektur", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
