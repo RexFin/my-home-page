@@ -4,7 +4,7 @@ import Navbar from './components/Navbar.vue';
 </script>
 
 <template>
-    <header>
+    <header style="margin: 20px 0;">
         <Navbar />
     </header>
 

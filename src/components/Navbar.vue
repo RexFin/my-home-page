@@ -1,31 +1,73 @@
 <template>
     <nav>
-        <RouterLink to="/" class="nav_element tektur">Home</RouterLink>
-        <a class="nav_element tektur" href="#">Projects</a>
-        <a class="nav_element tektur" href="#">About</a>
-        <a class="nav_element tektur" href="#">Contacts</a>
+        <div class="nav-group">
+            <a target="_blank" href="https://github.com/RexFin/my-home-page">
+                REXFIN
+            </a>
+        </div>
+
+        <div class="nav-group">
+            <RouterLink to="/" class="nav_element tektur">Home</RouterLink>
+            <a class="nav_element tektur" href="#">About</a>
+            <a class="nav_element tektur" href="#">Projects</a>
+            <a class="nav_element tektur" href="#">Contacts</a>
+        </div>
+
+        <div class="nav-group">
+            <button class="icon-btn">
+                <LanguageSolid class="icon" />
+            </button>
+        </div>
+
     </nav>
 </template>
 <script setup>
+import LanguageSolid from './icons/LanguageSolid.vue';
+
 
 </script>
 <style scoped>
     nav {
         display: flex;
-        justify-content: center;
-        width: 100%;
-        margin-top: 20px;
-        padding: 20px 0;
+        justify-content: space-between;
+        align-items: center;
         background-color: var(--smart-blue);
+        box-shadow: 0 0 10px var(--steel-azure);
+        margin: 0 auto;
+        height: 50px;
+        width: 80%;
     }
 
-    nav a {
+    .nav_element {
+        height: 50px;
+        background-color: var(--steel-azure);
+        transition: all .3s ease-out;
         text-decoration: none;
         color: white;
         font-size: 20px;
+        padding: 10px 20px;
     }
 
-    .nav_element:not(:last-child) {
-        margin-right: 20px;
+    .nav_element:hover {
+        padding: 10px 40px;
+        background-color: var(--cool-steel);
+        font-weight: 700;
+    }
+
+    .nav_element:last-child {
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+
+    .nav_element:first-child {
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+    }
+
+    .icon-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
     }
 </style>

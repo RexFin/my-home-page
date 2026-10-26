@@ -1,7 +1,15 @@
 <template>
     <div class="container">
-        <h1 class="tektur">Hello world!</h1>
-        <h2 class="tektur">I'm RexFin</h2>
+        <section>
+            <div class="welcome-card">
+                <h1>Hello! Welcome to my Homepage.</h1>
+                
+            </div>
+
+        </section>
+        <section>
+
+        </section>
     </div>
 </template>
 <script setup>
@@ -13,8 +21,15 @@
         flex-direction: column;
         width: 80%;
         margin: 0 auto;
-        background-color: var(--blue-slate);
-        color: white;
+        border: 1px solid lime;
         padding: 20px;
+    }
+
+    section {
+        background-color: var(--cool-steel);
+    }
+
+    .welcome-card {
+        
     }
 </style>
