@@ -1,7 +1,7 @@
 <template>
     <nav>
         <div class="nav-group">
-            <a target="_blank" href="https://github.com/RexFin/my-home-page">
+            <a class="github-link tiny5" target="_blank" href="https://github.com/RexFin/my-home-page">
                 REXFIN
             </a>
         </div>
@@ -34,6 +34,7 @@ import LanguageSolid from './icons/LanguageSolid.vue';
         background-color: var(--smart-blue);
         box-shadow: 0 0 10px var(--steel-azure);
         margin: 0 auto;
+        padding: 0 20px;
         height: 50px;
         width: 80%;
     }
@@ -66,8 +67,19 @@ import LanguageSolid from './icons/LanguageSolid.vue';
 
     .icon-btn {
         display: flex;
+        height: 50px;
+        width: 50px;
         justify-content: center;
         align-items: center;
         border: none;
+        background-color: transparent;
+        fill: white;
+        cursor: pointer;
+    }
+
+    .github-link {
+        color: white;
+        text-decoration: none;
+        font-size: 30px;
     }
 </style>

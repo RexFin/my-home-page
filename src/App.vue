@@ -1,6 +1,15 @@
 <script setup>
+import { onMounted } from 'vue';
 import { RouterView } from 'vue-router'
 import Navbar from './components/Navbar.vue';
+import { useVisitorStore } from '@/stores/visitor.js';
+import MyFooter from './components/MyFooter.vue';
+
+const visitorStore = useVisitorStore();
+
+onMounted(() => {
+    visitorStore.initID();
+})
 </script>
 
 <template>
@@ -9,6 +18,10 @@ import Navbar from './components/Navbar.vue';
     </header>
 
     <RouterView />
+
+    <Footer>
+        <MyFooter />
+    </Footer>
 </template>
 
 <style>
